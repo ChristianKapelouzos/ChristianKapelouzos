@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel with Captions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+}
+section {
+    padding: 40px 0;
+}
+footer .footer-content p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.card-img-top{
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: #000000 !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #000000 !important;
+}
+.navbar, navbar-inverse{
+  background-color: black;
+}
+
+.footer-content{
+  background-color: #007bff;
+}
+.navbar-brand{
+  color: #ffffff;
+}
+.dropdown-toggle{
+  color: #000000;
+}
+.navbar-nav li a {
+    color: #ffffff !important;
+}
+  .navbar-nav li a:hover {
+    color: #ffffff !important;
+  }
+  .navbar-nav .dropdown.open .dropdown-toggle {
+  color: #000000 !important;
+}
+
+.navbar-nav .dropdown-menu li a {
+  color: #000000 !important;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+  width: 100%;
+  height: 100%;
+}
+.col-md-4{
+    border: 1px solid #007bff;
+    color: white;
+    background-color:black;
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Recipes</a>
+            <span class="caret"></span>
+            <ul class="dropdown-menu">
+              <li><a href="recipe.html" target="_blank">Recipe1</a></li>
+              <li><a href="recipe2.html" target="_blank">Recipe2</a></li>
+              <li><a href="recipeboostrap.html" target="_blank">Recipe3</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/dirksen.jpg" alt="school graduation class" class="d-block" style="width: 100%; height: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img src="media/award1.jpeg" alt="Salutatorian award" class="d-block" style="width: 100%; height: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img src="media/award2.jpeg" alt="math award" class="d-block" style="width: 100%; height: 100%;">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <h1 style="font-size: 35px; text-align: center;">Graduation 24'</h1>
+      <p>I graduated 8th grade from Dirksen and was Salutatorian, the 2nd highest achieving grades, and got awards. I gave a speech and we all sang a song that reflected our journey throughout our lives. Graduation was and will be a important memory for me.</p>
+    </div>
+    <div class="col-md-4">
+      <h1 style="font-size: 35px; text-align: center;">Salutatorian</h1>
+      <p>I was Salutatorian for my 8th grade graduating class which means I averaged the 2nd highest grades out of everyone else in my grade. This achievment means so much to me since my mom was also Salutatorian at the same Elementary school I went to and she is proud of me.</p>
+    </div>
+    <div class="col-md-4">
+      <h1 style="font-size: 35px; text-align: center;">Math Award</h1>
+      <p>I recieved the mathematics honors award for my 8th grade graduation and it means a lot to me because I studied a lot, worked hard, and did my work, and it paid off. This achievement also means so much to me because I know I did something great.</p>
+    </div>
+</div>
+
+<section id="contact" style="background-color: #007bff;">
+  <div class="container-fluid" style="background-color: #007bff;">
+      <h2 class="text-center mb-4">Contact</h2>
+      <footer>
+          <div class="footer-content" style="font-size: 25px;">
+            <p>&copy; Christian Kapelouzos. All Rights Reserved | <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJGGqBrsZCHnPFQjKvFXXGbmnkddbsHnCvLvZFMcCxPtlnnrfDdZjzkZzlSrqrnBwHvDB" target="_blank">ckapelouzos@cps.edu</a> | <a href="https://github.com/Christian-Kapelouzos" target="_blank">Christian's Github Profile</a><a href="#" class="fa fa-instagram"></a> <a href="#" class="fa fa-snapchat"></a></p>
+        </footer>
+      </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

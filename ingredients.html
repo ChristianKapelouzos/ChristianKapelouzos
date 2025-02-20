@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Christian Kapelouzos: Period 1-->
+        <title>Christian's Recipe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-color:gold;
+            }
+            header{
+                color: white;
+                font-size: 45px;
+                text-align: center;
+                background-color: green;
+            }
+            #history{
+                background-color: red;
+                border: 5px dotted green;
+                font-size: 22px;
+                color:white;
+                align-self: end;
+                width: 780px;
+                height: 700px;
+                float: right;
+            }
+            h1{
+                text-align: center;
+                font-size: 28px;
+            }
+            #ingredients{
+                background-color: red;
+                border: 5px dotted green;
+                font-size: 22px;
+                color:white;
+                align-self: end;
+                width: 550px;
+                height: 700px;
+                float: left;
+            }
+            h3{
+                text-align: center;
+                font-size: 28px;
+            }
+            h4{
+                text-align: center;
+                font-size: 28px;
+            }
+            .navbar ul{
+                list-style-type: none;
+                background-color: purple;
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            .navbar a{
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+            }
+            .navbar a:hover{
+                background-color: silver;
+            }
+            .navbar li{
+                float: left;
+            }
+            footer{
+                padding:0;
+                margin:0;
+                box-sizing: border-box;
+                background-color: #1D1B1B;
+            }
+            .footerContainer{
+                width:100%;
+                padding: 70px 30px 20px;
+            }
+            .socialIcons{
+                display: flex;
+                justify-content: center;
+            }
+            .socialIcons a{
+                text-decoration: none;
+                padding:10px;
+                background-color:white;
+                margin:10px;
+                border-radius: 50%;
+            }
+             .socialIcons a i{
+                font-size: 2em;
+                color: darkgray;
+                opacity:0,9;
+             }
+             /* Hover Effects on Social Media Icons */
+             .socialIcons a:hover{
+                background-color:darkgray;
+                transition:0.5s;
+             }
+             .socialIcons a:hover i{
+                color:white;
+                transition:0.5s;
+             }
+             .footerNav{
+                margin:30px 0;
+             }
+             .footerNav ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+             }
+             .footerNav ul li a{
+                color: white;
+                margin: 20px;
+                text-decoration: none;
+                font-size: 1.3em;
+                opacity: 0.7;
+                transition: 0.5s;
+             }
+             .footerNav ul li a:hover{
+                opacity: 1;
+             }
+             .footerBottom{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            Plov Recipe
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+            </ul>
+        </nav>
+        <main>
+        <section id="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Meat- traditional plov is made with beef,lamb, or pork</li>
+            <li>Rice- brown rice, jasmine, or basmati rice</li>
+            <li>Carrots- cut carrots into dice pieces</li>
+            <li>Onions- cut onions into dice pieces</li>
+            <li>Garlic- usea whole head of garlic</li>
+            <li>Water- beef broth or other stocks can be used instead of water.</li> 
+        </ul>
+        <h4>Directions</h4>
+        <ol>
+            <li>To begin, fry the meat. Then pour over with a broth or water and simmer until the meat is fork-tender (1 hour.)</li>
+            <li>In a large pot saute the onion and carrots in oil. Add the garlic cloves, rice, and spices. fry until fragrant.</li>
+            <li>Strain the meat from the simmering water into a large measuring cup. Add the meat to the rice and pour additional water into the measuring cup to make 4 cups of liquid in total. Pour into the rice and stir.</li>
+            <li>Cover Plov with a lid and reduce the heat to low. Simmer for 30 minutes then turn off and steam for an additional 15 minutes.</li>
+            <li>Serve!</li>
+        </ol>
+        <img src="media/plov.jpg" style="position: absolute; left: 600px; top: 150px;" width="300" height="350">
+        <video style="position: absolute; left: 600px; top: 550px;" with="350" height="250" poster="media/dish.jpeg" controls>
+            <source src="media/russian.mp4">
+        </video>
+        <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footerNav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Updates</a></li>
+            <li><a href="">ContactUs</a></li>
+            <li><a href="">About</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+</div>
+<div class="footerBottom">
+    <p>CopyRight &copy;2024; Designed by Christian</p>
+</div>
+</foooter> 
+    </section>
+    </main>
+    </article>
+    </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ed3737;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+section {
+    padding: 40px 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#about-me img {
+    max-width: 100%;
+}
+
+
+footer .footer-content p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.card-img-top{
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: #000000 !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #000000 !important;
+}
+.navbar, navbar-inverse{
+  background-color: black;
+}
+
+.footer-content{
+  background-color: #007bff;
+}
+.navbar-brand{
+  color: #ffffff;
+}
+.dropdown-toggle{
+  color: #000000;
+}
+.navbar-nav li a {
+    color: #ffffff !important;
+  }
+  .navbar-nav li a:hover {
+    color: #ffffff !important;
+  }
+  .navbar-nav .dropdown.open .dropdown-toggle {
+  color: #000000 !important;
+}
+
+.navbar-nav .dropdown-menu li a {
+  color: #000000 !important;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Recipes</a>
+            <span class="caret"></span>
+            <ul class="dropdown-menu">
+              <li><a href="recipe.html" target="_blank">Recipe1</a></li>
+              <li><a href="recipe2.html" target="_blank">Recipe2</a></li>
+              <li><a href="recipeboostrap.html" target="_blank">Recipe3</a></li>
+            </ul>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-4">
+      <h1>Christian Kapelouzos</h1>
+  </header>
+
+    <section id="about-me" class="py-5 bg-light">
+        <div class="container">
+            <h2 style="font-size: 40px;" class="text-center mb-4">Christian Kapelouzos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="media/lane.jpeg" class="img-fluid rounded-circle" alt="Student Soccer Image">
+                </div>
+                <div class="col-md-8">
+                <p style="font-size: 25px;">Freshmen at Lane Tech College Prep Taking Web Development and Career Interests in Architecture</p>
+                <p style="font-size: 20px;">Hello, I am 14 years old and a freshmen at Lane Tech. I played on the Lane Tech soccer team, played the piano for six years, and play basketball and soccer. I take Web Development as my elective where we build and design web pages. In  the future, I want to pursue architechture because the way Chicago's infrastructure is built, especially the skyline, is very interesting to me and the designs. I want to be able to design buildings and build them. I am a funny, smart, social, and helpful person who wants to learn more. I like going outside with my friends and hanging out, and also playing video games. My favorite animal is cats and I have them as a pet, and I like helping animals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <h2 style="font-size: 30px; text-align: center;" class="text-center mb-4">Sports</h2>
+                        <a href="sports.html" target="_blank"><img src="media/soccer.jpeg" class="card-img-top" alt="Soccer Team Image"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">I went to Dirksen Elementary School and I played soccer during middle school and we won the Chicago Network 1 Championship. We played the final game at Lane Tech.</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <h2 style="font-size: 30px; text-align: center;" class="text-center mb-4">Academics</h2>
+                        <a href="academics.html" target="_blank"><img src="media/grad.jpeg" class="card-img-top" alt="Project Image"></a>          
+                        <div class="card-body">
+                            <h5 class="card-title">I was Salutatorian for my 8th grade class, gave a speech in front of hundreds of people, and had to write my own speech for the graduation. I got a honors math award and got straight A's.</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <h2 style="font-size: 30px; text-align: center;" class="text-center mb-4">Hobbies</h2>
+                        <a href="hobbies.html" target="_blank"><img src="media/piano.jpeg" class="card-img-top" alt="Project Image"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">I am an aspiring piano piano and have been playing for six years now. I performed in two  shows with other people from all ages that play a variety of instruments and singing. </h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #007bff;">
+        <div class="container" style="background-color: #007bff;">
+            <h2 class="text-center mb-4">Contact</h2>
+            <footer>
+                <div class="footer-content" style="font-size: 25px;">
+                  <p>&copy; Christian Kapelouzos. All Rights Reserved | <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJGGqBrsZCHnPFQjKvFXXGbmnkddbsHnCvLvZFMcCxPtlnnrfDdZjzkZzlSrqrnBwHvDB" target="_blank">ckapelouzos@cps.edu</a> | <a href="https://github.com/Christian-Kapelouzos" target="_blank">Christian's Github Profile</a><a href="#" class="fa fa-instagram"></a> <a href="#" class="fa fa-snapchat"></a></p>
+              </footer>
+            </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
